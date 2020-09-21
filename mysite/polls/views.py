@@ -43,5 +43,5 @@ def vote(request, question_id):
 
 
 def owner(request) :
-    text = "Hello, world. 174b3952 is the polls index."
+    text = "Hello, world. 174b3952 is the polls owner."
     return render(request, 'polls/owner.html', {'text':text})

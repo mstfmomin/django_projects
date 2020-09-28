@@ -10,5 +10,6 @@ urlpatterns = [
     # showing that hello context will be found in hello.urls 
     path('hello/', include('hello.urls')),
     path('admin/', admin.site.urls),
-    path('autos/', include('autos.urls')),                   # Add
+    path('autos/', include('autos.urls')), 
+    path('cats/', include('cats.urls')),
 ]

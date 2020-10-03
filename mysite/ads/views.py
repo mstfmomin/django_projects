@@ -14,12 +14,12 @@ class AdDetailView(OwnerDetailView):
 
 class AdCreateView(OwnerCreateView):
     model = Advertisement
-    fields = ['title', 'text']
+    fields = ['title', 'text', 'price']
 
 
 class AdUpdateView(OwnerUpdateView):
     model = Advertisement
-    fields = ['title', 'text']
+    fields = ['title', 'text', 'price']
 
 
 class AdDeleteView(OwnerDeleteView):

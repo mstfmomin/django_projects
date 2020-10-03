@@ -4,14 +4,10 @@
 <!-- Edit dj4e-samples/settings.py and add APP_NAME = 'DJ4E Samples' or similar -->
 <title>{% block title %}{{ settings.APP_NAME }}{% endblock %}</title>
 
-<name="dj4e-code" content="42160129592490">
 <!-- Replace this value (42-42) with the one provided by the autograder -->
-<meta name="dj4e" content="28ce9bc954876829eeb56ff46da8e1ab"> 
+<meta name="dj4e" content="42-42">
 
-
-
-
-
+<meta name="dj4e-code" content="42160168974954">
 
 <link rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
@@ -39,44 +35,14 @@
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
 
-<meta name="dj4e-version" content="2020-03-26">
+<meta name="dj4e-version" content="2020-10-01">
 
 {% block head %} {% endblock %}
 
 </head>
 <body>
 <div class="container">
-{% block navbar %} 
-
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Sellchat</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="/polls">Polls</a></li>
-      <li><a href="/hello">Hello</a></li>
-      <li><a href="/autos">Autos</a></li>
-      <li><a href="/cats">Cats CRUD</a>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="/accounts/login"><span class="glyphicon glyphicon-user"></span> Login</a></li>
-      <li><a href="/accounts/logout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
-    </ul>
-  </div>
-</nav>
-
-
-
- {% comment %} <ul>
-<li><p><a href="/polls">A Polls Application</a></p></li>
-<li><p><a href="/hello">Test the session</a></p></li>
-<li><a href="/autos">Autos CRUD</a>
-</ul> {% endcomment %}
-
-
-
-{% endblock %}
+{% block navbar %} {% endblock %}
 {% block welcome %} {% endblock %}
 {% block messages %}
     {% if messages %}
